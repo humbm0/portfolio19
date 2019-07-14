@@ -8,7 +8,7 @@ Tags: bootstrap portfolio
 
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 
 
@@ -20,8 +20,8 @@ html {font-size: 18px;}
 
 body {
   background-color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   line-height: 2;
   font-size: 1em;
   color: #000;
@@ -38,7 +38,7 @@ div{
 }
 
 .sans-serif{
-  font-family: "Lato", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
@@ -48,30 +48,30 @@ div{
 p {
   margin-bottom: 1.3em;
 }
-p.small{
-  font-size: 0.78em;
-}
 
-h1, h2, h3, h4 {
-  font-family: 'Poppins', cursive;
-  /* margin: 1.414em 0 0.5em; */
-  font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 16px;
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  line-height: 1.15;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 2.488em;
 }
 
-h2 {font-size: 2.827em;}
+h2 {font-size: 2.074em;}
 
-h3 {font-size: 1.999em;}
+h3 {font-size: 1.728em;}
 
-h4 {
-  font-size: 1.414em;
-  color: #ccc;
+h4 {font-size: 1.44em;}
+
+h5 {font-size: 1.2em;}
+
+p.small {
+  font-size: 0.889em;
+  font-weight: 300;
 }
 
 @media (max-width : 375px) {
@@ -94,8 +94,8 @@ button:focus{
 }
 
 a{
-  font-weight: 500;
-  font-family: 'Poppins', cursive;
+  /* font-weight: 500;
+  font-family: 'Poppins', cursive; */
   color: inherit;
 }
 a {
@@ -135,6 +135,9 @@ a.primary-btn:hover{
   color: rgb(37,57,72);
   font-weight: 500;
 }
+.grey{
+  color: #9B9B9B;
+}
 
 ul{
   margin: 0;
@@ -162,7 +165,18 @@ img{
   padding-right: 56px;
   z-index: 11;
   background: rgba(255,255,255,.97)!important;
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
+  /* box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important; */
+}
+.nav-menu ul{
+  list-style: none;
+  float: right;
+}
+.nav-menu li{
+  display: inline;
+  padding-left: 40px;
+}
+.nav-menu .logo{
+  float: left;
 }
 @media (max-width : 375px) {
   .nav-menu{
@@ -183,83 +197,7 @@ img{
 .nav-menu .links{
   text-align: right;
 }
-.nav-menu .burger{
-  cursor: pointer;
-}
-.nav-menu .burger span{
-  height: 2px!important;
-  width: 24px;
-  margin: 5px 0 5px 0;
-  display: block;
-  background-color: #333;
-  transition: all .4s ease;
-}
-.hamburger{
-  position: inherit;
-  right: 56px;
-  padding: 0;
-}
-.hamburger-box {
-  position: relative;
-  display: inherit;
-  width: 40px;
-  height: 24px;
-}
-.nav-menu .burger:hover .burger:first-child{
-  transform: translateY(-2px);
-}
-.overlay-menu{
-  width: 100vw;
-  position: fixed;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0;
-  overflow: hidden;
-  top: 0;
-}
-.overlay-menu.is-active{
-  animation: menu-open 0.6s ease forwards;
-  animation-fill-mode: forwards;
-}
-.overlay-menu.is-closing{
-  animation: menu-close 0.6s ease forwards;
-  animation-fill-mode: forwards;
-}
-.overlay-menu li{
-  list-style: none;
-  margin: 24px 0 24px 0;
-}
-.overlay-menu a{
-  font-size: 2.369em;
-  opacity: 0;
-}
-.overlay-menu.is-active a{
-  animation: links-show 0.6s ease 0.8s forwards;
-  animation-fill-mode: forwards;
-}
-.overlay-menu.is-closing a{
-  animation: links-hide 0.6s ease forwards;
-  animation-fill-mode: forwards;
-}
-@keyframes links-show {
-  0% {opacity: 0; transform: translateY(16px);}
-  100% {opacity: 1; transform: translateY(0);}
-}
-@keyframes links-hide {
-  0% {opacity: 1; transform: translateY(0);}
-  100% {opacity: 0; transform: translateY(16px);}
-}
-@keyframes menu-open {
-  0% {height: 0;}
-  100% {height: 100vh;}
-}
-@keyframes menu-close {
-  0% {height: 100vh;;}
-  100% {height: 0;}
-}
+
 
 footer{
   margin-top: 120px;
@@ -274,8 +212,8 @@ footer .contact a{
 
 
 .page{
-  padding-top: 160px;
-  margin-top: 80px;
+  padding-top: 144px;
+  margin-top: 40px;
 }
 .hero {
   position: absolute;
@@ -336,8 +274,6 @@ a.project:nth-child(even) .content{
   padding-right: 15px;
 }
 .project .content .info{
-  position: absolute;
-  bottom: 24px;
   opacity: 0;
   transform: translateY(4px);
   transition: all 0.6s ease;
@@ -407,10 +343,33 @@ a.project:nth-child(even) .content{
 }
 .project-content h3{
   margin-top: 80px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
+  /* padding-right: 40% */
 }
 .project-content p{
-  margin-bottom: 120px;
+  margin-bottom: 144px;
+  /* padding-left: 40% */
+}
+.project-content p.sm-margin{
+  margin-bottom: 48px;
+}
+/* .project-content ol{
+  padding-left: 40%
+} */
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 2em;
+  position: relative;
 }
 .project-content img{
   left: 50%;
@@ -445,6 +404,11 @@ figure.wp-block-image {
 }
 .project a:hover{
   background: none;
+}
+
+
+.about h1{
+  margin-bottom: 64px;
 }
 
 

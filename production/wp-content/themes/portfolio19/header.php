@@ -8,9 +8,10 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Blog Template for Bootstrap</title>
+	<title>Max Humberstone Design</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/dist/animsition.min.css"> -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/dist/hamburgers.min.css">
 	<link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
 	<script src="https://unpkg.com/scrollreveal"></script>
@@ -24,7 +25,7 @@
 
 <body>
 
-  <div class="nav-menu">
+  <!-- <div class="nav-menu">
 		<div class="logo">
 			<a href="<?php echo home_url(); ?>">
 				<img src="<?php echo get_bloginfo( 'template_directory' );?>/img/mh.png" alt="">
@@ -41,6 +42,19 @@
     <ul>
 			<?php wp_list_pages( '&title_li=' ); ?>
     </ul>
+  </div> -->
+
+	<div class="nav-menu">
+		<div class="container">
+			<div class="logo">
+				<a href="<?php echo home_url(); ?>">
+					<img src="<?php echo get_bloginfo( 'template_directory' );?>/img/mh.png" alt="">
+				</a>
+			</div>
+			<ul>
+				<?php wp_list_pages( '&title_li=' ); ?>
+	    </ul>
+		</div>
   </div>
 
 	<div class="">

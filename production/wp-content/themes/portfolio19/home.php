@@ -14,12 +14,8 @@
 
     <div class="container ">
       <div class="row">
-        <div class="col-lg-6 col-md-9 intro-content spacing-xxxl">
+        <div class="col-lg-9 col-md-10 intro-content spacing-xxxl" data-aos="fade-up">
           <h1><?php the_field('title'); ?></h1>
-          <p class="l-para"><?php the_field('sub_text'); ?>👋</p>
-          <div class="music-module">
-            <p><img src="<?php echo get_bloginfo( 'template_directory' );?>/img/music.svg" alt=""> <span>Currently listening to</span> - <?php the_field('listening_to'); ?></p>
-          </div>
         </div>
       </div>
     </div>
