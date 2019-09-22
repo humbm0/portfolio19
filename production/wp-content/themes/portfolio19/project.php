@@ -14,7 +14,7 @@
    <div class="container page">
      <div class="row">
        <div class="col-md-8 intro-content spacing-xxxl" data-aos="fade-up">
-         <a class="l-para" href="<?php echo get_home_url(); ?>"><p class="l-para">Back to projects</p></a>
+         <a class="l-para" href="<?php echo get_home_url(); ?>"><p class="l-para"><span class="arrow-back"><ion-icon name="arrow-back"></ion-icon></span>Back to projects</p></a>
          <h1><?php the_title(); ?></h1>
          <p class="l-para"><?php the_field('intro_text'); ?></p>
        </div>
@@ -27,7 +27,7 @@
      </div>
    </div>
 
-   <div class="overview spacing-xxxl">
+   <div class="overview">
      <div class="container">
        <div class="row">
          <div class="col-md-6" data-aos="fade-up">
@@ -62,6 +62,22 @@
       </div>
     </div>
   </div>
+
+  <div class="gallery">
+    <?php
+
+  $images = get_field('gallery');
+  $size = 'full'; // (thumbnail, medium, large, full or custom size)
+
+  if( $images ): ?>
+
+          <?php foreach( $images as $image ): ?>
+              <div class="gallery-image"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></div>
+          <?php endforeach; ?>
+
+  <?php endif; ?>
+  </div>
+
 </div>
 
 <script type="text/javascript">

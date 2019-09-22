@@ -15,8 +15,10 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <!-- <script src="<?php echo get_bloginfo( 'template_directory' );?>/dist/animsition.js"></script> -->
 <script src="<?php echo get_bloginfo( 'template_directory' );?>/script.js"></script>
 <?php wp_footer(); ?>

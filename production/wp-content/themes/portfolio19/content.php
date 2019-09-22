@@ -10,7 +10,7 @@
 				<h4 class="grey"></h4>
 				<h3><?php the_title(); ?></h3>
 				<p><?php the_field('intro_text'); ?></p>
-				<p class="info grey small"><?php the_date(); ?> | 15 min read</p>
+				<p class="info grey small"><?php the_date(); ?>  |  <?php the_field('read_time'); ?> minutes</p>
 			</div>
 		</div>
 	</div>

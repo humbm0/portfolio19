@@ -10,6 +10,8 @@
 
 	<title>Max Humberstone Design</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 	<!-- <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/dist/animsition.min.css"> -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/dist/hamburgers.min.css">
@@ -25,24 +27,6 @@
 
 <body>
 
-  <!-- <div class="nav-menu">
-		<div class="logo">
-			<a href="<?php echo home_url(); ?>">
-				<img src="<?php echo get_bloginfo( 'template_directory' );?>/img/mh.png" alt="">
-			</a>
-		</div>
-		<button class="hamburger hamburger--spin" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
-  </div>
-
-  <div class="overlay-menu">
-    <ul>
-			<?php wp_list_pages( '&title_li=' ); ?>
-    </ul>
-  </div> -->
 
 	<div class="nav-menu">
 		<div class="container">

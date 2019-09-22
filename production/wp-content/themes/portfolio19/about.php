@@ -24,12 +24,15 @@
       <div class="row" data-aos="fade-up">
         <div class="col-md-4">
           <h4>Experience</h4>
+          <?php the_field('experience'); ?>
         </div>
         <div class="col-md-4">
           <h4>Education</h4>
+          <?php the_field('education'); ?>
         </div>
         <div class="col-md-4">
           <h4>Awards</h4>
+          <?php the_field('awards'); ?>
         </div>
       </div>
   </div>
