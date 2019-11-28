@@ -6,25 +6,30 @@ Version: 0.0.1
 Tags: bootstrap portfolio
 */
 
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700'); */
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
 
 
 :root {
-  --mainColor: #276ef1;
+  --mainColor: #28D08A;
+  --headingColor: #323649;
+  --bodyColor: #5b5e6e;
+  --numberColor: #9B9B9B;
+  --serifFont: 'DM Serif Text', serif;
 }
 
 html {font-size: 18px;}
 
 body {
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   line-height: 2;
   font-size: 1em;
-  color: #000;
+  color: var(--bodyColor);
   /* background-image: url("img/bg_lines_half.svg"); */
   background-repeat: repeat;
   counter-reset: my-sec-counter;
@@ -47,13 +52,15 @@ div{
 
 p {
   margin-bottom: 1.3em;
+  color: var(--bodyColor);
 }
 
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'DM Serif Text', serif;
   font-weight: 300;
   line-height: 1.15;
+  color: #323649;
 }
 
 h1 {
@@ -140,7 +147,7 @@ a.primary-btn:hover{
   font-weight: 500;
 }
 .grey{
-  color: #9B9B9B;
+  color: var(--numberColor);
 }
 
 ul{
@@ -313,9 +320,10 @@ a.project:nth-child(even) .content{
   opacity: 0;
   transform: translateY(4px);
   transition: all 0.6s ease;
+  color: var(--bodyColor);
 }
 .project:hover .info{
-  opacity: 1;
+  opacity: 0.5;
   transform: translateY(0);
 }
 .project h4::after {
@@ -393,7 +401,7 @@ a.project:nth-child(even) .content{
 }
 .project-content h3{
   margin-top: 144px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   /* padding-right: 40% */
 }
 @media (max-width : 375px) {
@@ -417,8 +425,8 @@ ol li {
 }
 ol li::before {
   content: counter(my-awesome-counter) ". ";
-  color: var(--mainColor);
-  font-weight: bold;
+  color: var(--headingColor);
+  font-family: var(--serifFont);
   font-size: 2em;
   position: relative;
 }
@@ -458,7 +466,10 @@ ol li::before {
   box-shadow: none;
 }
 figure.wp-block-image {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
+}
+.wp-block-columns {
+  margin-top: 120px;
 }
 @media (max-width : 375px) {
   .project-content img{
