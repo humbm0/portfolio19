@@ -391,7 +391,7 @@ a.project:nth-child(even) .content{
   padding: 0;
 }
 .project-image{
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 }
 @media (max-width : 375px) {
@@ -402,7 +402,6 @@ a.project:nth-child(even) .content{
 .project-content h3{
   margin-top: 144px;
   margin-bottom: 40px;
-  /* padding-right: 40% */
 }
 @media (max-width : 375px) {
   .project-content h3{
