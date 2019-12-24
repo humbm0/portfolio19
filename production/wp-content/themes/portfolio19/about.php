@@ -11,7 +11,7 @@
 
 <div class="page about">
   <div class="container">
-      <div class="row">
+      <div class="row spacing-l">
         <div class="col-md-9" data-aos="fade-up">
           <h1>A multidisciplinary designer focused on user experience with a keen interest in humanising complex technology.</h1>
         </div>

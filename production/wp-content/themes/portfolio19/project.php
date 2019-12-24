@@ -30,11 +30,11 @@
    <div class="overview">
      <div class="container">
        <div class="row">
-         <div class="col-md-6" data-aos="fade-up">
+         <div class="col-lg-6" data-aos="fade-up">
            <h3>Overview</h3>
            <p><?php the_field('overview'); ?></p>
          </div>
-         <div class="col-md-5 offset-md-1" data-aos="fade-up" data-aos-delay="600">
+         <div class="col-lg-5 offset-lg-1" data-aos="fade-up" data-aos-delay="600">
            <h3>Team</h3>
            <?php the_field('team'); ?>
          </div>
@@ -48,7 +48,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8 offset-md-2 project-content" data-aos="fade-up" data-aos-offset="300">
+      <div class="col-lg-8 offset-lg-2 project-content" data-aos="fade-up" data-aos-offset="300">
         <?php
 
   			/* Start the Loop */
