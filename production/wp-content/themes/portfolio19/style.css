@@ -463,7 +463,13 @@ ol li::before {
   margin-right: auto;
 	max-width: none !important;
 	right: 0;
-	width: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wp-block-column.text{
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .wp-block-columns{
   left: 50%;
@@ -472,7 +478,8 @@ ol li::before {
 	max-width: none !important;
 	position: relative;
 	right: 50%;
-	width: 90vw;
+  width: 90vw;
+  margin-top: 0px;
 }
 .wp-block-columns.text{
   left: 0;
@@ -492,6 +499,13 @@ ol li::before {
   margin-top: 80px;
   margin-bottom: 80px !important;
 }
+.wp-block-image figcaption{
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  opacity: 0.6;
+  padding-top: 16px;
+}
 
 
 
@@ -508,6 +522,27 @@ ol li::before {
   width: 100%;
   height: auto;
   border: 1px solid #eee;
+}
+
+
+/* NEXT PROJECTS */
+.next-project a{
+  background: none;
+}
+.next-project a:hover h3{
+  text-decoration: underline;
+}
+.next-project img{
+  height: 400px;
+  width: auto;
+}
+.next-project p{
+  padding-right: 32px;
+}
+.next-project h4{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  padding-bottom: 24px;;
 }
 
 

@@ -50,7 +50,6 @@
     <div class="row">
       <div class="col-lg-8 offset-lg-2 project-content" data-aos="fade-up" data-aos-offset="300">
         <?php
-
   			/* Start the Loop */
   			while ( have_posts() ) :
   				the_post();
@@ -78,6 +77,11 @@
   <?php endif; ?>
   </div>
 
+  <?php
+    get_template_part( 'nextProject', get_post_format() );
+  ?>
+ 
+            
 </div>
 
 <script type="text/javascript">
