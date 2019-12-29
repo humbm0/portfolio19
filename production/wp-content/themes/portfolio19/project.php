@@ -62,20 +62,25 @@
     </div>
   </div>
 
-  <div class="gallery">
+
     <?php
 
   $images = get_field('gallery');
   $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
   if( $images ): ?>
-
-          <?php foreach( $images as $image ): ?>
+  
+    <div class="container-fluid gallery">
+      <div class="row">
+        <?php foreach( $images as $image ): ?>
+            <div class="col-md-4">
               <div class="gallery-image"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></div>
-          <?php endforeach; ?>
-
+            </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
   <?php endif; ?>
-  </div>
+
 
   <?php
     get_template_part( 'nextProject', get_post_format() );

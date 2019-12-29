@@ -35,7 +35,7 @@
           <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 content">
             <h2>Let’s work together…</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis leo vel nibh facilisis ullamcorper.</p>
-            <a href="#" class="primary-btn">Say hello!</a>
+            <a href="mailto:maxhumberstonedesigns@gmail.com" target="_top" class="primary-btn">Say hello!</a>
           </div>
         </div>
       </div>

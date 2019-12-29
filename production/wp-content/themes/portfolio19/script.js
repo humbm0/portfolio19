@@ -48,11 +48,11 @@ $(document).ready(function() {
   //   // Do something else, like open/close menu
   // });
 
-  $('.gallery').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
+  // $('.gallery').slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3
+  // });
 
 
 
