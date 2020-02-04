@@ -8,7 +8,7 @@
         <p>Made with ♥️ on a 🖥 in London, UK</p>
       </div>
       <div class="col-md-6 right">
-        <p>©2019, Max Humberstone Design. All Rights Reserved</p>
+        <p>©2020, Max Humberstone Design. All Rights Reserved</p>
       </div>
     </div>
   </div>

@@ -73,7 +73,7 @@
     <div class="container-fluid gallery">
       <div class="row">
         <?php foreach( $images as $image ): ?>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="gallery-image"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></div>
             </div>
         <?php endforeach; ?>

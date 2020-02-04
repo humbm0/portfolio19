@@ -19,6 +19,8 @@ Tags: bootstrap portfolio
   --bodyColor: #5b5e6e;
   --numberColor: #9B9B9B;
   --serifFont: 'DM Serif Text', serif;
+  --xsBreakPoint: 572px;
+  --mBreakPoint: 992px;
 }
 
 html {font-size: 18px;}
@@ -81,12 +83,21 @@ p.small {
   font-weight: 300;
 }
 
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   h1 {font-size: 2.074em;}
 
   h2 {font-size: 1.728em;}
 
   h3 {font-size: 1.44em;}
+
+  html {font-size: 16px;}
+}
+blockquote p{
+  font-size: 1.44em;
+  color: #323649;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  font-family: 'DM Serif Text', serif;
 }
 
 button:focus{
@@ -167,6 +178,9 @@ ul li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -16px;
 }
+.slick-dots li::before{
+  display: none;
+}
 
 img{
   width: 100%;
@@ -181,7 +195,7 @@ img{
 .spacing-l{
   margin-bottom: 80px;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .spacing-xxxl{
     margin-bottom: 80px;
   }
@@ -236,7 +250,7 @@ img{
 .nav-menu .links{
   text-align: right;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .nav-menu{
     padding-left: 0;
     padding-right: 0;
@@ -267,7 +281,7 @@ footer .contact a{
   padding-top: 144px;
   margin-top: 40px;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .page{
     padding-top: 80px;
   }
@@ -300,10 +314,14 @@ a.project:nth-child(even) .content{
   height: 504px;
   transition: all 0.6s ease;
 }
-@media (max-width : 375px) {
+@media (max-width : 992px) {
+  .project .content h4{
+    margin-top: 0;
+  }
+}
+@media (max-width : 572px) {
   .project .image{
     height: 234px;
-    transition: all 0.6s ease;
   }
 }
 .project:hover .image{
@@ -357,7 +375,7 @@ a.project:nth-child(even) .content{
   padding: 40px 24px 80px 24px;
   border: 3px solid #000;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .contact-block {
     padding: 0px 24px 64px 24px;
   }
@@ -392,7 +410,7 @@ a.project:nth-child(even) .content{
   height: 80vh;
   width: 100%;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .project-image{
     height: 50vh;
   }
@@ -406,7 +424,7 @@ a.project:nth-child(even) .content{
   padding-bottom: 120px;
   margin-bottom: 80px;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .overview{
     background: #f9f9f9;
     padding-top: 24px;
@@ -424,7 +442,7 @@ a.project:nth-child(even) .content{
   margin-top: 80px;
   margin-bottom: 40px;
 }
-@media (max-width : 375px) {
+@media (max-width : 572px) {
   .project-content h3{
     margin-top: 64px;
     margin-bottom: 24px;
@@ -491,6 +509,14 @@ ol li::before {
 	right: 0;
   width: 100%;
 }
+.wp-block-columns.masonry {
+  margin-top: 144px;
+  margin-bottom: 144px;
+}
+.wp-block-columns.masonry .wp-block-image{
+  margin-top: 0;
+  margin-bottom: 24px !important;
+}
 .wp-block-columns.image-text .wp-block-image{
   margin-top: 0px;
   margin-bottom: 0px !important;
@@ -545,6 +571,34 @@ ol li::before {
   opacity: 0.6;
   padding-top: 16px;
 }
+@media (max-width : 992px) {
+  .wp-block-column.text{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wp-block-column {
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .wp-block-column {
+    flex-basis: 100%!important;
+  }
+}
+@media (max-width : 572px) {
+  .wp-block-image, .wp-block-columns, .wp-block-columns.text{
+    left: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+    position: relative;
+    right: 0;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px !important;
+  }
+}
 
 
 
@@ -591,6 +645,9 @@ ol li::before {
 .about h1{
   margin-bottom: 64px;
 }
+.about h4{
+  margin-top: 0px;
+}
 .about ul{
   list-style: none;
   padding-inline-start: 0;
@@ -600,6 +657,11 @@ ol li::before {
 }
 .about p:nth-child(even){
   margin: 0;
+}
+@media (max-width : 768px) {
+  .about h4{
+    margin-top: 32px;
+  }
 }
 
 
@@ -612,6 +674,37 @@ footer .container{
   padding-top: 40px;
 }
 
+
+/* OTHER WORK */
+.other-work .col-md-7{
+  padding: 0;
+}
+.other-work h3{
+  margin-top: 0;
+}
+.other-work .row{
+  margin-bottom: 104px;
+}
+.other-work .image{
+  height: 720px;
+  width: auto;
+}
+.other-work .text{
+  padding-left: 48px;
+}
+@media (max-width : 992px) {
+  .other-work .image{
+    height: 420px;
+  }
+  .other-work .text{
+    padding-left: 16px;
+  }
+}
+@media (max-width : 572px) {
+  .other-work .image{
+    height: 378px;
+  }
+}
 
 
 

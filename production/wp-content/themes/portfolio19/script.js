@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   AOS.init({
   // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: 'tablet', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
   animatedClassName: 'aos-animate', // class applied on animation
@@ -53,6 +53,26 @@ $(document).ready(function() {
   //   slidesToShow: 3,
   //   slidesToScroll: 3
   // });
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+  // $('.slider-nav').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   asNavFor: '.slider-for',
+  //   dots: true,
+  //   centerMode: true,
+  //   focusOnSelect: true
+  // });
+    
 
 
 

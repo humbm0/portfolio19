@@ -1,6 +1,6 @@
 <div class="container next-project">
 
-	<h4>Next project</h4>
+	<h4>Continue reading</h4>
 	
 		<?php $prev_post = get_adjacent_post( true, '', true ); ?>
 		<?php if ( is_a( $prev_post, 'WP_Post' ) ) { ?>
@@ -42,14 +42,3 @@
 
 
 
-<!-- <?php $next_post = get_adjacent_post( true, '', false ); ?>
-	<?php if ( is_a( $next_post, 'WP_Post' ) ) {  ?>
-	<div class="col-md-6 item">
-		<a href="<?php echo get_permalink( $next_post->ID ); ?>">
-			<img src="<?php the_field('thumbnail_image', $next_post->ID); ?>" alt="">
-			<h3><?php echo get_the_title( $next_post->ID ); ?></h3>
-			<p><?php the_field('intro_text', $next_post->ID); ?></p>
-			<p class="info grey small"><?php the_date($next_post->ID); ?>  |  <?php the_field('read_time', $next_post->ID); ?> minutes</p>
-		</a>
-	</div>
-<?php } ?> -->
