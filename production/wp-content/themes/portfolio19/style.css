@@ -15,7 +15,7 @@ Tags: bootstrap portfolio
 
 :root {
   --mainColor: #02b875;
-  --bkgrdColour: #f3f3f3;
+  --bkgrdColour: #f9f9f9;
   --headingColor: #323649;
   --bodyColor: #5b5e6e;
   --numberColor: #9B9B9B;
@@ -431,13 +431,13 @@ a.project:nth-child(even) .content{
     padding-bottom: 48px;
   }
 }
-.overview ul{
+/* .overview ul{
   list-style: none;
   padding: 0;
 }
 .overview h3, .overview p{
   color: #fff;
-}
+} */
 
 
 /* PROJECT TEXT */
