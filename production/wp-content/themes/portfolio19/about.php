@@ -21,7 +21,7 @@
           <p>I turn visions into concepts and translate those concepts into designs that illustrate simplicity despite system complexity. I have experience working with both on and off shore teams to take concepts through from concept to production. Using my knowledge in front-end development languages such as HTML, CSS, Javascript and SASS I am able to effectively communicate design intent to technical teams as well as creating high fidelity interaction prototypes.</p>
         </div>
       </div>
-      <div class="row" data-aos="fade-up">
+      <div class="row spacing-xxl" data-aos="fade-up">
         <div class="col-lg-4 col-md-6">
           <h4>Experience</h4>
           <?php the_field('experience'); ?>
@@ -35,6 +35,12 @@
           <?php the_field('certifications'); ?>
           <h4>Awards</h4>
           <?php the_field('awards'); ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>Publications and conferences</h3>
+          <?php the_field('publications'); ?>
         </div>
       </div>
   </div>
