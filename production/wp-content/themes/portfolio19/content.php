@@ -8,7 +8,7 @@
 			</div>
 			<div class="content col-lg-5">
 				<h4 class="grey"></h4>
-				<h3><?php the_title(); ?></h3>
+				<h2><?php the_title(); ?></h2>
 				<p><?php the_field('intro_text'); ?></p>
 				<p class="info grey small"><?php the_date(); ?></p>
 			</div>

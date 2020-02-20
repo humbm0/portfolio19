@@ -24,7 +24,7 @@ Tags: bootstrap portfolio
   --mBreakPoint: 992px;
 }
 
-html {font-size: 18px;}
+html {font-size: 16px;}
 
 body {
   background-color: white;
@@ -487,12 +487,12 @@ ol li::before {
 }
 .wp-block-image{
   left: 50%;
-	margin-left: -40vw;
-	margin-right: -40vw;
+	margin-left: -35vw;
+	margin-right: -35vw;
 	max-width: none !important;
 	position: relative;
 	right: 50%;
-  width: 80vw;
+  width: 70vw;
   margin-top: 144px;
   margin-bottom: 144px !important;
 }
@@ -511,6 +511,7 @@ ol li::before {
 	max-width: none !important;
 	right: 0;
   width: 100%;
+  margin-bottom: 0px !important;
 }
 .wp-block-columns.masonry {
   margin-top: 144px;
@@ -534,20 +535,15 @@ ol li::before {
 }
 .wp-block-columns{
   left: 50%;
-	margin-left: -40vw;
-	margin-right: -40vw;
+	margin-left: -35vw;
+	margin-right: -35vw;
 	max-width: none !important;
 	position: relative;
 	right: 50%;
-  width: 80vw;
+  width: 70vw;
   margin-top: 0px;
 }
 .wp-block-columns.text{
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-	max-width: none !important;
-	right: 0;
   width: 65vw;
 	margin-left: -32.5vw;
 	margin-right: -32.5vw;
@@ -556,6 +552,9 @@ ol li::before {
   left: 50%;
   margin-top: 104px;
   margin-bottom: 104px;
+}
+.wp-block-columns.text .wp-block-column{
+  padding: 16px;
 }
 .wp-block-image.small{
   left: 0;
