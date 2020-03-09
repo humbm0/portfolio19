@@ -93,12 +93,18 @@ p.small {
 
   html {font-size: 16px;}
 }
+
+blockquote{
+  display: flex;
+  justify-content: center;
+}
 blockquote p{
   font-size: 1.44em;
   color: #323649;
   margin-top: 48px;
   margin-bottom: 48px;
   font-family: 'DM Serif Text', serif;
+  max-width: 80%;
 }
 
 button:focus{
@@ -441,12 +447,12 @@ a.project:nth-child(even) .content{
 
 
 /* PROJECT TEXT */
-.project-content h3{
+.project-content h3, .project-content h2{
   margin-top: 140px;
   /* margin-bottom: 32px; */
 }
 @media (max-width : 572px) {
-  .project-content h3{
+  .project-content h3, .project-content h2{
     margin-top: 104px;
     /* margin-bottom: 24px; */
   }
@@ -487,12 +493,12 @@ ol li::before {
 }
 .wp-block-image{
   left: 50%;
-	margin-left: -35vw;
-	margin-right: -35vw;
+	margin-left: -30vw;
+	margin-right: -30vw;
 	max-width: none !important;
 	position: relative;
 	right: 50%;
-  width: 70vw;
+  width: 60vw;
   margin-top: 144px;
   margin-bottom: 144px !important;
 }
@@ -535,18 +541,18 @@ ol li::before {
 }
 .wp-block-columns{
   left: 50%;
-	margin-left: -35vw;
-	margin-right: -35vw;
+	margin-left: -30vw;
+	margin-right: -30vw;
 	max-width: none !important;
 	position: relative;
 	right: 50%;
-  width: 70vw;
+  width: 60vw;
   margin-top: 0px;
 }
 .wp-block-columns.text{
-  width: 65vw;
-	margin-left: -32.5vw;
-	margin-right: -32.5vw;
+  width: 60vw;
+	margin-left: -30vw;
+	margin-right: -30vw;
 	max-width: none !important;
   right: 50%;
   left: 50%;
@@ -605,17 +611,34 @@ ol li::before {
 
 
 /* PROJECT GALLERY  */
-.gallery{
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
   padding-top: 144px;
-  padding-bottom: 144px;
 }
-.gallery-image{
-  margin-bottom: 32px;
-}
-.gallery-image img{
+
+.masonry .item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 4em;
   width: 100%;
+}
+.masonry .item img{
   height: auto;
-  border: 1px solid #eee;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+@media (max-width : 992px) {
+  .masonry { /* Masonry container */
+    column-count: 1;
+    column-gap: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 80px;
+  }
+  .item { /* Masonry bricks or child elements */
+    margin: 0 0 2em;
+  }
 }
 
 

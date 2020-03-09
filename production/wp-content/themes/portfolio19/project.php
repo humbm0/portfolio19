@@ -23,7 +23,7 @@
 
    <div class="container-fluid">
      <div class="row">
-       <div class="project-image" style="background-image: url('<?php the_field('thumbnail_image'); ?>');" data-aos="fade-up" data-aos-offset="300"></div>
+       <div class="project-image" style="background-image: url('<?php the_field('hero'); ?>');" data-aos="fade-up" data-aos-offset="300"></div>
      </div>
    </div>
 
@@ -63,22 +63,19 @@
   </div>
 
 
-    <?php
+  <?php
 
   $images = get_field('gallery');
   $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
   if( $images ): ?>
+
+  <div class="masonry">
+    <?php foreach( $images as $image ): ?>
+      <div class="item"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></div>
+    <?php endforeach; ?>
+  </div>
   
-    <div class="container-fluid gallery">
-      <div class="row">
-        <?php foreach( $images as $image ): ?>
-            <div class="col-lg-4 col-md-6">
-              <div class="gallery-image"><?php echo wp_get_attachment_image( $image['ID'], $size ); ?></div>
-            </div>
-        <?php endforeach; ?>
-      </div>
-    </div>
   <?php endif; ?>
 
 

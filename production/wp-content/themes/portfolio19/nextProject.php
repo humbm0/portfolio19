@@ -29,7 +29,7 @@
 						<div class="col-md-6">
 							<h2><?php echo get_the_title( $prev_post->ID ); ?></h2>
 							<p><?php the_field('intro_text', $prev_post->ID); ?></p>
-							<p class="info grey small"><?php the_date($prev_post->ID); ?>  |  <?php the_field('read_time', $prev_post->ID); ?> minutes</p>
+							<p class="info grey small"><?php the_date($prev_post->ID); ?></p>
 						</div>
 					</div>
 				</a>
