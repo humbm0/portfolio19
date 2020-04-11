@@ -556,8 +556,8 @@ ol li::before {
 	max-width: none !important;
   right: 50%;
   left: 50%;
-  margin-top: 104px;
-  margin-bottom: 104px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .wp-block-columns.text .wp-block-column{
   padding: 16px;
@@ -593,6 +593,10 @@ ol li::before {
   .wp-block-column {
     flex-basis: 100%!important;
   }
+}
+.wp-embed-aspect-16-9 .wp-has-aspect-ratio iframe{
+  width: 100%;
+  height: 420px;
 }
 @media (max-width : 572px) {
   .wp-block-image, .wp-block-columns, .wp-block-columns.text{
