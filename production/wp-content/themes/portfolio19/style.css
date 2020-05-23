@@ -97,6 +97,8 @@ p.small {
   html {font-size: 16px;}
 }
 
+
+
 blockquote{
   display: flex;
   justify-content: center;
@@ -440,10 +442,9 @@ ol li::before {
 
 /* PROJECT IMAGES */
 .wp-block-image{
-  margin-left: -30%;
-  margin-right: -30%;
   text-align: center;
   margin-top: 140px;
+  max-width: none;
 }
 .wp-block-image.small{
   margin-left: 0;
@@ -466,6 +467,10 @@ ol li::before {
   }
 }
 @media (min-width: 992px){
+  .wp-block-image{
+    margin-left: -30%;
+    margin-right: -30%;
+  }
   .wp-block-image img{
     max-width: 960px;
   }
@@ -521,16 +526,17 @@ ol li::before {
 .next-project{
   margin-top: 144px;
 }
+.next-project .wrapper{
+  display: flex;
+  align-items: center;
+}
 .next-project a{
   background: none;
 }
 .next-project a:hover h3{
   text-decoration: underline;
 }
-.next-project img{
-  height: 400px;
-  width: auto;
-}
+
 .next-project p{
   padding-right: 32px;
 }

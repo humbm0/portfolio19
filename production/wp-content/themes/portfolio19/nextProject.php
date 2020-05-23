@@ -9,10 +9,12 @@
 					<div class="col-md-6 item">
 						<img src="<?php the_field('thumbnail_image', $prev_post->ID); ?>" alt="">
 					</div>
-					<div class="col-md-6">
-						<h2><?php echo get_the_title( $prev_post->ID ); ?></h2>
-						<p><?php the_field('intro_text', $prev_post->ID); ?></p>
-						<p class="info grey small"><?php the_date($prev_post->Date); ?>  |  <?php the_field('read_time', $prev_post->ID); ?> minutes</p>
+					<div class="col-md-6 wrapper">
+						<div>
+							<h2><?php echo get_the_title( $prev_post->ID ); ?></h2>
+							<p><?php the_field('intro_text', $prev_post->ID); ?></p>
+							<p class="info grey small"><?php the_date($prev_post->Date); ?>  |  <?php the_field('read_time', $prev_post->ID); ?> minutes</p>
+						</div>
 					</div>
 				</div>
 			</a>
@@ -26,10 +28,12 @@
 						<div class="col-md-6 item">
 							<img src="<?php the_field('thumbnail_image', $prev_post->ID); ?>" alt="">
 						</div>
-						<div class="col-md-6">
-							<h2><?php echo get_the_title( $prev_post->ID ); ?></h2>
-							<p><?php the_field('intro_text', $prev_post->ID); ?></p>
-							<p class="info grey small"><?php the_date($prev_post->ID); ?></p>
+						<div class="col-md-6 wrapper">
+							<div>
+								<h2><?php echo get_the_title( $prev_post->ID ); ?></h2>
+								<p><?php the_field('intro_text', $prev_post->ID); ?></p>
+								<p class="info grey small"><?php the_date($prev_post->ID); ?></p>
+							</div>
 						</div>
 					</div>
 				</a>
