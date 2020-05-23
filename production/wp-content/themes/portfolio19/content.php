@@ -1,4 +1,4 @@
-<div class="project col-md-6">
+<div class="project" data-aos="fade-up">
 	<a href="<?php echo get_permalink(); ?>">
 		<div class="image-block">
 			<div class="wrapper">

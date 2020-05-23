@@ -127,6 +127,7 @@ a{
   text-decoration: none;
   opacity: 0.6;
   color: var(--headingColor);
+  font-weight: 500;
 }
 a:hover{
   opacity: 1;
@@ -178,6 +179,11 @@ ul li::before {
 
 img{
   width: 100%;
+}
+
+.no-margin-top-bottom{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .spacing-xxxl{
@@ -289,21 +295,57 @@ footer .contact a{
   height: 100%;
 }
 
-
+.project a{
+  opacity: 1;
+}
+.projects-container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-top: 6rem;
+}
 .project{
-  padding: 2rem;
+  position: relative;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  overflow: hidden;
+  width: 50%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
 }
 .project:nth-child(2n) {
-  margin-top: 7.5rem;
+  margin-top: -7.5rem;
 }
 .project .content{
   padding: 2rem;
 }
-.project h2{
+.project h3{
   margin-top: 0;
 }
 .project .image{
-  height: 504px;
+  height: 575px;
+  background: #f9f9f9;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width : 572px) {
   .project .image{
@@ -313,16 +355,8 @@ footer .contact a{
 .project:hover .image{
   transform: scale(1.05);
 }
-.project .content p{
-  opacity: 0;
-  transform: translateY(4px);
-}
 .project .content p.info{
-  transform: translateY(10px);
-}
-.project:hover .content p{
-  opacity: 1;
-  transform: translateY(0);
+  margin-bottom: 0;
 }
 .project:hover h3{
   color: var(--mainColor);
@@ -330,6 +364,16 @@ footer .contact a{
 .project .wrapper{
   overflow: hidden;
   width: 100%;
+}
+
+@media (max-width: 768px){
+  .project{
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .project:nth-child(2n) {
+    margin-top: 0;
+  }
 }
 
 
@@ -446,12 +490,6 @@ ol li::before {
   margin-top: 140px;
   max-width: none;
 }
-.wp-block-image.small{
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 .wp-block-image img{
   max-width: 1140px;
 }
@@ -467,7 +505,7 @@ ol li::before {
   }
 }
 @media (min-width: 992px){
-  .wp-block-image{
+  .wp-block-image, .wp-block-columns{
     margin-left: -30%;
     margin-right: -30%;
   }
@@ -480,6 +518,11 @@ ol li::before {
     max-width: 1140px;
   }
 }
+.wp-block-column .wp-block-image, .wp-block-image.small{
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 .wp-block-image figcaption{
   font-size: 14px;
