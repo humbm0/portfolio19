@@ -21,16 +21,19 @@
     </div>
 
     <div class="container">
+      <div class="row">
 
-      <?php
-      $args = array( 
-        'numberposts' => 7 
-      );
-      $lastposts = get_posts( $args );
-      foreach($lastposts as $post) : setup_postdata($post);
-        get_template_part( 'content', get_post_format() );
-      ?>
-      <?php endforeach; ?>
+        <?php
+        $args = array( 
+          'numberposts' => 7 
+        );
+        $lastposts = get_posts( $args );
+        foreach($lastposts as $post) : setup_postdata($post);
+          get_template_part( 'content', get_post_format() );
+        ?>
+        <?php endforeach; ?>
+
+      </div>
 
       <div class="contact-block">
         <div class="row">
