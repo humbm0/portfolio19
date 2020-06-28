@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1rem;
   font-family: var(--serifFont);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.25;
   color: var(--headingColor);
 }
 
@@ -191,6 +191,9 @@ img{
 }
 .spacing-xxl{
   margin-bottom: 144px;
+}
+.spacing-xl{
+  margin-bottom: 104px;
 }
 .spacing-l{
   margin-bottom: 80px;
@@ -449,7 +452,7 @@ footer .contact a{
 
 /* PROJECT TEXT */
 .project-content h3, .project-content h2{
-  margin-top: 140px;
+  /* margin-top: 140px; */
 }
 @media (min-width: 576px){
   .project-content h3, .project-content h2{
@@ -488,10 +491,19 @@ ol li::before {
 .wp-block-image{
   text-align: center;
   margin-top: 140px;
+  margin-bottom: 140px;
   max-width: none;
 }
 .wp-block-image img{
   max-width: 1140px;
+}
+.wp-block-image.screen{
+  padding: 40px;
+  background-color: #CCEBFF;
+}
+.wp-block-image.screen img{
+  border-radius: 4px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 576px){
@@ -606,6 +618,18 @@ ol li::before {
 }
 .about p:nth-child(even){
   margin: 0;
+}
+.clients .images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+.clients img{
+  height: 96px;
+  width: 144px;
+  object-fit: contain;
+  margin: 24px;
 }
 @media (max-width : 768px) {
   .about h4{
